@@ -48,7 +48,7 @@ const Timeline=({f}:{f:number})=>{
   <Piece name="clip-dog" x={596-trim} y={481} w={169} h={70} style={{opacity:dog}}/>
   <Piece name="clip-dance" x={766-trim} y={481} w={198} h={70} style={{opacity:club}}/>
   {f>116&&<div style={{position:'absolute',left:99,top:559,width:val(f,[116,131],[0,1036]),height:43,overflow:'hidden'}}><Piece name="audio" x={0} y={0} w={1036} h={43}/></div>}
-  {caption&&<Piece name="caption-track" x={466} y={444} w={val(f,[370,380],[0,173])} h={28}/>}
+  {caption&&<><Piece name="caption-track" x={466} y={444} w={173} h={28}/>{f<410&&<div style={{position:'absolute',left:val(f,[370,410],[489,636]),top:449,width:636-val(f,[370,410],[489,636]),height:17,background:'#f1ce61'}}/>}</>}
   {f>=287&&<Piece name="badge-rotate" x={255} y={502} w={31} h={34}/>}
   {f>=320&&<Piece name="badge-page" x={451} y={500} w={33} h={34}/>}
   {f>=349&&<Piece name="badge-glitch" x={623} y={500} w={33} h={34}/>}
@@ -114,7 +114,7 @@ export const AccurateMotion=()=>{
    {f>=805&&<div style={{position:'absolute',left:38,top:156,width:375,height:341,opacity:val(f,[805,811],[0,1])}}>
      <Piece name="note-final" x={0} y={0} w={375} h={341}/>
      <div style={{position:'absolute',left:27+val(f,[824,852],[0,323]),top:139,width:323-val(f,[824,852],[0,323]),height:108,background:'#fdfbf7'}}/>
-     {f<865&&<div style={{position:'absolute',left:173,top:271,width:179,height:33,background:'#fdfbf7'}}/>}
+     {f<888&&<div style={{position:'absolute',left:173,top:271,width:179,height:33,background:'#fdfbf7'}}/>}
    </div>}
   </div>
   <Opening f={f}/>
