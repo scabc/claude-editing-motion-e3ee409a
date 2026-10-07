@@ -1,0 +1,4 @@
+@font-face{font-family:ReferenceHand;src:url('../public/reconstruction/PatrickHand.ttf') format('truetype');font-display:block}
+.reconstruction{background:#f3eee5;color:#37332e;font-family:ReferenceHand,Arial,sans-serif}
+.r-timecode{position:absolute;left:572px;top:17px;width:134px;height:34px;border-radius:6px;background:#2d2b28;color:#f8f7ef;text-align:center;font-size:24px;line-height:31px;letter-spacing:.5px}
+.r-beats{position:absolute;left:92px;top:607px;width:1110px;height:23px;display:flex;justify-content:space-between}
